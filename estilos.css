@@ -1,0 +1,271 @@
+/*cuerpo*/
+*{
+    padding: 2.5em;
+}
+
+/*header*/
+header{
+    display: flex;
+    padding-bottom: 0;
+}
+
+header p{
+    padding-left: 7em;
+    padding-top: 0;
+}
+
+h1{
+    padding-top: 0em;
+     
+}
+
+.who::first-line{
+    font-weight: 900;
+}
+
+/*container*/
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container :nth-child(n){
+    max-width: 300px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.cargo{
+    text-align: left;
+    font-size: 12px;
+    line-height: 16px;
+    transform: rotate(90deg);
+    font-family: 'PT Serif', serif;
+    width: 110px;
+    height: 12px;
+    padding: 0;
+}
+
+.name{
+    font-size: 18px;
+    padding: 0;
+    text-align: left;
+    font-weight: 800 !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*****CREWS****************/
+
+/*crew_1*/
+.crew_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.crew_1 :nth-child(1){
+    width: 238px;
+    padding:0;
+}
+
+.crew_1 :nth-child(2){
+    padding-right: 18px;
+    padding-top: 95px;
+}        
+
+
+.crew_1 :nth-child(3){
+    padding-bottom: 200px;
+}
+
+/*crew_2*/
+.crew_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.crew_2 :nth-child(1){
+    width:238px;
+    padding:0;
+    padding-top: 90px;
+}
+
+.crew_2 :nth-child(2){
+    padding-left: 90px;
+    padding-top: 170px;
+}
+
+.crew_2 :nth-child(3){
+    padding-bottom: 90px;
+}
+
+
+
+/*crew_3*/
+.crew_3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.crew_3 :nth-child(1){
+    width:238px;
+    padding:0;
+}
+
+.crew_3 :nth-child(2){
+    padding-right: 18px;
+    padding-top: 95px;
+}
+
+.crew_3 :nth-child(3){
+    padding-bottom: 200px;
+}
+
+
+
+/*crew_4*/
+.crew_4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.crew_4 :nth-child(1){
+    width:238px;
+    padding:0;
+}
+
+.crew_4 :nth-child(2){
+    padding-right: 18px;
+    padding-top: 95px;
+}
+
+.crew_4 :nth-child(3){
+    padding-bottom: 90px;
+}
+
+/*crew_5*/
+.crew_5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.crew_5 :nth-child(1){
+    width:238px;
+    padding:0;
+    padding-top: 90px;
+}
+
+.crew_5 :nth-child(2){
+    padding-left: 90px;
+    padding-top: 170px;
+}
+
+.crew_5 :nth-child(3){
+    padding-bottom: 5px;
+}
+
+/*crew_6*/
+.crew_6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.crew_6 :nth-child(1){
+    width:238px;
+    padding:0;
+}
+
+.crew_6 :nth-child(2){
+    padding-right: 18px;
+    padding-top: 95px;
+}
+
+.crew_6 :nth-child(3){
+    padding-bottom: 90px;
+}
+
+/*footer*/
+
+footer{
+    text-align: center;
+    color: grey;
+    clear: both;
+    padding: 0;
+}
+
+footer p{
+    padding:0;
+}
+
+/*responsive*/
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    *{
+        padding: 0.2em;
+    }
+    
+    header {
+        display: grid;
+    }
+
+    header p{
+        text-align: left;
+        padding-left: 0.5em;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+
+    .container :nth-child(n) {
+          max-width: 150px;
+    }
+    
+    .cargo{
+        max-height: 25%;
+        font-size: 10px;
+        font-weight: none;
+    }
+   
+    .container :nth-child(3){
+          padding-top: 0;
+          padding-bottom: 10px;
+    }
+    
+    .container :nth-child(4){
+        padding-top: 55px;
+    }
+  
+    .container :nth-child(6){
+        padding-top: 55px;
+    }
+    
+    .crew_1 :nth-child(3){
+        padding-bottom: 100px;
+    }
+
+    .crew_3 :nth-child(3){
+        padding-bottom: 100px;
+    }
+    
+    .crew_5 :nth-child(1){
+        padding-top: 0px;
+    }
+    
+    .crew_5 :nth-child(2){
+        padding-left: 0;
+        padding-right: 90px;
+    }
+
+    .crew_5 :nth-child(3){
+        padding-bottom: 100px;
+    }
+
+}
